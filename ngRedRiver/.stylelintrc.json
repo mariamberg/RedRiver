@@ -1,0 +1,9 @@
+{
+    "extends": ["stylelint-config-standard"],
+    "rules": {
+      "string-quotes": "single",
+      "declaration-block-trailing-semicolon": "always",
+      "no-empty-source": null,
+      "selector-class-pattern": null
+    }
+  }

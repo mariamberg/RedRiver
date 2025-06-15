@@ -1,0 +1,34 @@
+<div class="container mt-4">
+  <h2>Quote List</h2>
+  <button class="btn btn-primary mb-3 me-2" routerLink="/quote/all" (click)="addNewQuote()">
+    Add New Quote
+  </button>
+  <button
+    class="btn btn-primary mb-3"
+    style="margin-left: 10px"
+    routerLink="/quote/all"
+    (click)="toBookList()"
+  >
+    To Books
+  </button>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Citat</th>
+        <th>Upphovsman</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let quote of quotes">
+        <td>{{ quote.text }}</td> <!-- or quote.text if you mapped it -->
+        <td>{{ quote.author }}</td>
+        <td>
+          <button class="btn btn-warning btn-sm" (click)="update(quote.id)">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="delete(quote.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

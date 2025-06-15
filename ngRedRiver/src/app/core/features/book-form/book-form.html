@@ -1,0 +1,52 @@
+<form [formGroup]="this.bookForm" (ngSubmit)="submitForm()" class="container mt-4 p-4 bg-light rounded shadow-sm" style="max-width: 500px;">
+  <h3 class="mb-4 text-center">Add / Edit Book</h3>
+
+  <div class="mb-3">
+    <label for="title" class="form-label">Titel</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      formControlName="title"
+      placeholder="Enter book title"
+      [class.is-invalid]="bookForm.get('title')?.invalid && (bookForm.get('title')?.touched || bookForm.get('title')?.dirty)"
+    />
+    <div class="invalid-feedback">
+      Title is required.
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="author" class="form-label">Författare</label>
+    <input
+      type="text"
+      class="form-control"
+      id="author"
+      formControlName="author"
+      placeholder="Enter author name"
+      [class.is-invalid]="bookForm.get('author')?.invalid && (bookForm.get('author')?.touched || bookForm.get('author')?.dirty)"
+    />
+    <div class="invalid-feedback">
+      Author is required.
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <label for="year" class="form-label">Årtal</label>
+    <input
+      type="number"
+      class="form-control"
+      id="year"
+      formControlName="year"
+      placeholder="Enter year"
+      [class.is-invalid]="bookForm.get('year')?.invalid && (bookForm.get('year')?.touched || bookForm.get('year')?.dirty)"
+    />
+    <div class="invalid-feedback">
+      Please enter a valid year.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100" [disabled]="bookForm.invalid">
+    Submit
+  </button>
+</form>

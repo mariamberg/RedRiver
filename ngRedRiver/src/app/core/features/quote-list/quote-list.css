@@ -1,0 +1,120 @@
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+h2 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Button styling */
+button {
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+/* Add horizontal spacing between the two buttons container */
+.button-group > button:not(:last-child) {
+  margin-right: 12px; /* or whatever spacing you want */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+thead th {
+  background-color: #343a40;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  border-radius: 8px 8px 0 0;
+  font-weight: 600;
+}
+
+tbody tr {
+  background: white;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+  transition: transform 0.15s ease;
+  border-radius: 8px;
+}
+
+tbody tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgb(0 0 0 / 12%);
+}
+
+tbody td {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td:last-child {
+  white-space: nowrap;
+}
+
+/* Spacing between buttons in actions column */
+td button {
+  margin-right: 8px;
+}
+
+/* Responsive tweaks */
+@media (width <= 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 0.4rem 0.8rem;
+  }
+}

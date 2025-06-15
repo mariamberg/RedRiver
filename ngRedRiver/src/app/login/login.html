@@ -1,0 +1,21 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="logIn()">
+    <input type="text" [(ngModel)]="username" name="username" placeholder="Username" required>
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required>
+    <button type="submit">Log In</button>
+  </form>
+
+  <p class="error">{{ errorMessage }}</p>
+
+  <h3>Register New User</h3>
+  <form (ngSubmit)="register()">
+    <input type="text" [(ngModel)]="newUsername" name="newUsername" placeholder="New Username" required>
+    <input type="password" [(ngModel)]="newPassword" name="newPassword" placeholder="New Password" required>
+    <button type="submit">Register</button>
+  </form>
+
+  <p class="error">{{ registerErrorMessage }}</p>
+  <p class="success">{{ registerSuccessMessage }}</p>
+</div>
+
