@@ -40,7 +40,7 @@ jobs:
 
       - name: Install dependencies and build Angular
         run: |
-          cd frontend
+          cd ngRedRiver
           npm ci
           npm run build -- --configuration production
       - name: Deploy to Azure Static Web Apps
