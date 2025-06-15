@@ -8,8 +8,8 @@ import { UpdateQuote } from '../models/update-quote.models';
 @Injectable({ providedIn: 'root' })
 export class QuoteService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:5226/api/v1/quote';
-  private apiAllUrl = 'http://localhost:5226/api/v1/quote/all';
+  private apiUrl = 'https://redriverbackenddemo-g9bgdehsefcqcmaw.swedencentral-01.azurewebsites.net/api/v1/quote';
+  private apiAllUrl = this.apiUrl + '/all';
   private quote: Quote[] = [];
 
   all(): Observable<Quote[]> {

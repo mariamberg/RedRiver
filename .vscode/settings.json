@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/610c6009-71e2-4dc2-bf06-b5ff890f8d8a/resourceGroups/RedRiverDemo/providers/Microsoft.Web/sites/RedRiverBackendDemo",
+    "appService.deploySubpath": "RedRiverBackend/publish"
+}

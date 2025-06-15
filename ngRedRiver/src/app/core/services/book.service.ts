@@ -8,8 +8,8 @@ import { UpdateBook } from '../models/update-book.model';
 @Injectable({ providedIn: 'root' })
 export class BookService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:5226/api/v1/book';
-  private apiAllUrl = 'http://localhost:5226/api/v1/book/all';
+  private apiUrl = 'https://redriverbackenddemo-g9bgdehsefcqcmaw.swedencentral-01.azurewebsites.net/api/v1/book';
+  private apiAllUrl = this.apiUrl + '/all';
 
   private books: Book[] = [];
 

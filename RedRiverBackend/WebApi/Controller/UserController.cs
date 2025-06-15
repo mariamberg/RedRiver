@@ -35,7 +35,7 @@ namespace RedRiverApp.WebApi.Controller
             return Unauthorized("Okänt användarnamn eller lösenord");
         }
 
-        [HttpPost("newUser")]
+        [HttpPost]
 
         public ActionResult<LogInResponse> Create([FromBody] NewUserRequest newUser)
         {

@@ -7,14 +7,14 @@ import { catchError, map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:5226/api/v1/user/login';
+  private apiUrl = 'https://redriverbackenddemo-g9bgdehsefcqcmaw.swedencentral-01.azurewebsites.net/api/v1/user';
 
   private http = inject(HttpClient);
 
   logIn(username: string, password: string): Observable<string> {
     const body = { username, password };
 
-    return this.http.post(this.apiUrl, body, { responseType: 'text' }).pipe(
+    return this.http.post(this.apiUrl + '/login', body, { responseType: 'text' }).pipe(
 
       map(response => response),
       catchError(error => {
@@ -27,7 +27,7 @@ export class AuthService {
   register(username: string, password: string): Observable<unknown> {
     const body = { username: username, password: password }; 
   
-    return this.http.post('http://localhost:5226/api/v1/user/newUser', body).pipe(
+    return this.http.post(this.apiUrl, body).pipe(
       catchError(error => {
         console.error('Registration failed', error);
         return throwError(() => new Error('Registration failed'));
