@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J0sKAOlhiLI=",
+  "dgSpecHash": "iVRj9DsLOwc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\maria\\Documents\\Jobb\\RedRiverApp\\RedRiverApp.csproj",
+  "projectFilePath": "C:\\Users\\maria\\Documents\\Jobb\\RedRiver\\RedRiverBackend\\RedRiverApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.6\\microsoft.aspnetcore.authentication.jwtbearer.9.0.6.nupkg.sha512",
     "C:\\Users\\maria\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",

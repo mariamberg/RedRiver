@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\Documents\\Jobb\\RedRiverApp\\RedRiverApp.csproj": {}
+    "C:\\Users\\maria\\Documents\\Jobb\\RedRiver\\RedRiverBackend\\RedRiverApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\Documents\\Jobb\\RedRiverApp\\RedRiverApp.csproj": {
+    "C:\\Users\\maria\\Documents\\Jobb\\RedRiver\\RedRiverBackend\\RedRiverApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\Documents\\Jobb\\RedRiverApp\\RedRiverApp.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\Documents\\Jobb\\RedRiver\\RedRiverBackend\\RedRiverApp.csproj",
         "projectName": "RedRiverApp",
-        "projectPath": "C:\\Users\\maria\\Documents\\Jobb\\RedRiverApp\\RedRiverApp.csproj",
+        "projectPath": "C:\\Users\\maria\\Documents\\Jobb\\RedRiver\\RedRiverBackend\\RedRiverApp.csproj",
         "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\Documents\\Jobb\\RedRiverApp\\obj\\",
+        "outputPath": "C:\\Users\\maria\\Documents\\Jobb\\RedRiver\\RedRiverBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config"
