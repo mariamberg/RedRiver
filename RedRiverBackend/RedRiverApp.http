@@ -1,0 +1,6 @@
+@RedRiverApp_HostAddress = http://localhost:5226
+
+GET {{RedRiverApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
