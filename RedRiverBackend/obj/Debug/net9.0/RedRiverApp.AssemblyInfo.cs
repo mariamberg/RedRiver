@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RedRiverApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+634bb6a04a66e082f35285e5eb08c660099d092a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66a7b5b547230b11ce6a0ae2277a70a8a2f7e008")]
 [assembly: System.Reflection.AssemblyProductAttribute("RedRiverApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RedRiverApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

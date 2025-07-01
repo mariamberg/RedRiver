@@ -63,7 +63,7 @@ export class QuoteForm implements OnInit {
       });
     } else if (this.quoteForm.valid) {
       const nyttQuote: NewQuote = new NewQuote(
-        this.quoteForm.value.quote,
+        this.quoteForm.value.text,
         this.quoteForm.value.author
       );
       console.log(nyttQuote);
